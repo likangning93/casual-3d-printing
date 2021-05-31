@@ -42,7 +42,7 @@ assembly is modeled as half of a pair, so make sure to print two of them.
 
 ## Tips for "adapting" other lenses
 
-The Max HQ's focal length was a mystery, so I designed a "test bench" both for
+The Max HQ's focal length was a mystery, so I designed a "test bench" for
 finding its far-focus distance:
 
 ![](images/test-bench-exploded.png)
