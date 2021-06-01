@@ -1,7 +1,7 @@
 # 30 mm "Body Cap Lens" - Printing and Assembly
 
-I plan to make STLs on Thingiverse shortly.
-In the meantime, they're also in a zip here: [stls/Quicksnap_stls.zip](stls/Quicksnap_stls.zip).
+STLs are available on Thingiverse here: https://www.thingiverse.com/thing:4874839
+They're also in a zip here: [stls/Quicksnap_stls.zip](stls/Quicksnap_stls.zip).
 
 There's also a Blender file here: [blender/Fujifilm_Quicksnap_lens.blend.zip](Fujifilm_Quicksnap_lens.blend.zip)
 

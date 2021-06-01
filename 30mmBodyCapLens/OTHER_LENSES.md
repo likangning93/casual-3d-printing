@@ -40,6 +40,8 @@ The blender file and stls for this lens are in the [`blender`](blender) and
 is very similar to the Fujifilm Quicksnap version, but the lens-and-aperture
 assembly is modeled as half of a pair, so make sure to print two of them.
 
+The STLs are also available on Thingiverse here: https://www.thingiverse.com/thing:4874844
+
 ## Tips for "adapting" other lenses
 
 The Max HQ's focal length was a mystery, so I designed a "test bench" for
