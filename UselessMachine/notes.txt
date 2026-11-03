@@ -1,0 +1,7 @@
+TODO:
+* rough and script the linkage system and stopper [DONE]
+* model fastener system and test print
+* model gears and test print
+* model one-way winding mechanism and test print
+* rough out the mechanical housing
+* model holes into all the beams and the mechanical housing
