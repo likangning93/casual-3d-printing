@@ -1,12 +1,7 @@
 TODO:
-* rough and script the linkage system and stopper [DONE]
-* model fastener system that can be integrated into arms and test print [DONE]
-  - thinking circular socket on the arm and a stopper, with thread holes
-  - sized a little "short" to make up for dimensional accuracy problems in Z
-* model gears and test print [DONE]
-* oscillator-and-arm tests
-* model one-way winding mechanism and test print
-  - focus on the winding side
-  - it'll be easier to adapt this to the "stop" side than the other way around
-  - these might end up side-by-side near the switch for compactness
-* model the remaining arms and housing based on all tolerance-tested parts
+* re-script for the quad-beam linkage, axis-to-axis measurements: [done]
+  - 3 units for gear arm
+  - 4 units for forearm
+  - 5 units for the poker and the "tester" side
+* design and test one-way gear
+* layout and print
