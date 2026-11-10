@@ -12,7 +12,7 @@ def compute_endpoint(beam_obj):
     end_z = math.sin(-rotation) * length + location.z # Z-up
     return end_x, end_z
 
-def circle_intersect(p0, p1, r0, r1, ref_pos):
+def circle_intersect(p0, p1, r0, r1):
 	""" returns nearest point in circle-circle intersection to ref_pos """
 	# http://paulbourke.net/geometry/circlesphere/
 	# distance d between circle centers
@@ -35,13 +35,7 @@ def circle_intersect(p0, p1, r0, r1, ref_pos):
 	p3_2x = p2_x - h * (p1.z - p0.z) / d
 	p3_2z = p2_z + h * (p1.x - p0.x) / d
 
-	dist_1_x = p3_1x - ref_pos[0]
-	dist_1_z = p3_1z - ref_pos[1]
-
-	dist_2_x = p3_2x - ref_pos[0]
-	dist_2_z = p3_2z - ref_pos[1]
-
-	if (dist_2_x * dist_2_x + dist_2_z * dist_2_z) > (dist_1_x * dist_1_x + dist_1_z * dist_1_z):
+	if p3_1z > p3_2z:
 		return (p3_1x, p3_1z)
 	else:
 		return (p3_2x, p3_2z)
@@ -53,8 +47,8 @@ def rotate_beam_towards_point(beam_obj, point_x, point_z):
 
 def compute_transforms(arm_rotation_degrees):
     arm_rotation_radians = math.radians(arm_rotation_degrees)
-    bpy.data.objects["driveshaft"].rotation_euler.y = arm_rotation_radians
-    bpy.data.objects["gear_a"].rotation_euler.y = arm_rotation_radians
+    bpy.data.objects["driveshaft"].rotation_euler.y = -arm_rotation_radians
+    bpy.data.objects["gear_a"].rotation_euler.y = -arm_rotation_radians
     bpy.data.objects["gear_b"].rotation_euler.y = arm_rotation_radians
     bpy.data.objects["stopper"].rotation_euler.y = arm_rotation_radians + STOPPER_OFFSET
     # beam_a is fixed to the gear
@@ -72,8 +66,7 @@ def compute_transforms(arm_rotation_degrees):
     beam_c.location.z = beam_c_loc_z
     # point beam_c and beam_a at the same endpoint - this is one of the intersections of
     # the two circles formed by their positions and radii
-    current_endpoint = compute_endpoint(beam_b)
-    common_x, common_z = circle_intersect(beam_b.location, beam_c.location, beam_b.scale.x, beam_c.scale.x, current_endpoint)
+    common_x, common_z = circle_intersect(beam_b.location, beam_c.location, beam_b.scale.x, beam_c.scale.x)
     rotate_beam_towards_point(beam_b, common_x, common_z)
     rotate_beam_towards_point(beam_c, common_x, common_z)
 
