@@ -47,8 +47,8 @@ def rotate_beam_towards_point(beam_obj, point_x, point_z):
 
 def compute_transforms(arm_rotation_degrees):
     arm_rotation_radians = math.radians(arm_rotation_degrees)
-    bpy.data.objects["driveshaft"].rotation_euler.y = -arm_rotation_radians
-    bpy.data.objects["gear_a"].rotation_euler.y = -arm_rotation_radians
+    bpy.data.objects["driveshaft"].rotation_euler.y = arm_rotation_radians
+    bpy.data.objects["gear_a"].rotation_euler.y = arm_rotation_radians
     bpy.data.objects["gear_b"].rotation_euler.y = arm_rotation_radians
     bpy.data.objects["stopper"].rotation_euler.y = arm_rotation_radians + STOPPER_OFFSET
     # beam_a is fixed to the gear
