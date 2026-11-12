@@ -3,5 +3,15 @@ TODO:
   - 3 units for gear arm
   - 4 units for forearm
   - 5 units for the poker and the "tester" side
-* design and test one-way gear
+* design and test one-way gear [done]
 * layout and print
+  - gearbox [printed]
+  - back cap [printed]
+  - fixed one-way-gear [printed]
+  - front cap with socket for crank [print-ready]
+  - switch plate and switch [print-ready]
+  - rubber band one-way-gear
+  - crank
+  - stopper [print-ready]
+  - arms
+  - assorted pegs and washers etc.
