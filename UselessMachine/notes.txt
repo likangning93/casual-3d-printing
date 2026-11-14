@@ -8,10 +8,11 @@ TODO:
   - gearbox [printed]
   - back cap [printed]
   - fixed one-way-gear [printed]
-  - front cap with socket for crank [print-ready]
-  - switch plate and switch [print-ready]
-  - rubber band one-way-gear
-  - crank
-  - stopper [print-ready]
-  - arms
-  - assorted pegs and washers etc.
+  - front cap with socket for crank [printed]
+  - switch plate and switch [ready]
+  - rubber band hook [ready]
+  - rubber band one-way-gear [ready]
+  - crank [modeled]
+  - stopper [ready]
+  - arms - many holes and pegs need to be inverted [ready]
+  - two flaps [ready] - unless we want to do these in another material instead
