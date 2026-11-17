@@ -1,4 +1,23 @@
-TODO:
+#### 0002 Debrief ####
+
+Things I don't like:
+* limited to one rev before rewinding, due to the thickness of the winding beam
+* still very fast and angry due to torque
+* assembly was extremely annoying, sliding things along the pencil shafts from one side
+
+Next steps:
+* try again with twisting the rubber band instead of pulling it
+* benefits:
+  - elastic potential spread across a lot more revolutions
+  - winding would be in the power delivery direction
+  - so, only need a single one-way-gear on the winding end
+  - and so the winding end stays fixed when running
+* might need a reduction gear to produce enough torque, 1-4 might be a good start?
+* pair with a matched multiplier gear for winding would help reduce annoyance of winding
+* for body assembly, sandwich the pencils between beams with rectangular cutouts and wrap with tape
+* don't need bottom two pencils at all, just prop it up on some feet
+
+#### 0002 TODO [DONE] ####
 * re-script for the quad-beam linkage, axis-to-axis measurements: [done]
   - 3 units for gear arm
   - 4 units for forearm
@@ -9,10 +28,10 @@ TODO:
   - back cap [printed]
   - fixed one-way-gear [printed]
   - front cap with socket for crank [printed]
-  - switch plate and switch [ready]
-  - rubber band hook [ready]
-  - rubber band one-way-gear [ready]
+  - switch plate and switch [printed]
+  - rubber band hook [printed]
+  - rubber band one-way-gear [printed]
   - crank [modeled]
-  - stopper [ready]
-  - arms - many holes and pegs need to be inverted [ready]
-  - two flaps [ready] - unless we want to do these in another material instead
+  - stopper [printed]
+  - arms - many holes and pegs need to be inverted [printed]
+  - two flaps [printed] - unless we want to do these in another material instead
